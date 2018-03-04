@@ -1,0 +1,374 @@
+@font-face {
+	font-family: "Raleway";
+	src: url(../fonts/Railway.otf)
+};
+
+body, div, ul, li, h1, h2, h3, p, span {
+	margin: 0;
+	padding: 0;
+}
+
+a {	text-decoration: none; }
+
+li {
+	text-decoration: none;
+	list-style: none;
+}
+
+section { display: block;}
+
+body {
+	margin: 0;
+	font-family: "Raleway", sans-serif;
+	background-color: #FFF9E7;
+}
+
+header { 
+	background: #F7F7F7;	
+	position: sticky;
+	width: 100%;
+	top: 2px;
+	z-index: 1000;
+}
+header:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+header:after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	bottom: -1px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.4)
+}
+
+nav {
+	height: 90px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1200px !important;	
+	padding: 10px !important;
+}
+
+.row {
+	height: 100% !important;
+}
+
+.logo {	
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.menu {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.nav-link {color: #272727;}
+
+li {	
+	text-align: right;
+	font-size: 20px;
+	background-color: rgba(247,247,247, .9); 	
+	text-align: center;
+	padding-left: 30px;
+}
+
+
+li a:hover {
+ 	color:  #D89A7D; 	
+}
+
+.navbar-toggler:focus {
+ 	outline: none;
+}
+
+.part {
+	min-height: 500px;
+	height: auto;
+}
+
+.me {
+	height: calc(100vh - 90px);
+}
+
+ .myInfo {
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: left;
+ 	justify-content: center;	
+ }
+
+ .name {
+ 	display: block;
+ 	width: 100%;
+ 	font-size: 5rem;
+ 	line-height: 100px; 	
+ 	font-weight: bold; 	
+ 	text-align: left;
+ 	color: #747474	
+ }
+
+ .who {
+ 	text-transform: capitalize;
+ 	font-size: 2rem;
+ 	color: #D89A7D;
+ 	padding: 20px 0px;
+ 	text-align: left;	
+ }
+
+ .icons {
+ 	display: flex;
+ 	justify-content: left;
+ 	font-size: 1.5rem; 	
+ }
+ .icons a {color: #747474;}
+
+ span {transition: color 0.5s;}
+
+ .icons  a:hover {
+ 	color: #D89A7D ;
+ }
+
+ .icons span {
+ 	padding: 5px;
+ 	margin: 0 10px;
+ }
+
+.foto-about-me {
+	background-image: url(../img/about-me.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 500px;	
+}
+
+.aboutMe {
+	background-color:#F9F9F9;
+}
+
+.aboutMe .container {
+	height: 100% !important;
+}
+
+.cv {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+.cv>h3 {
+	color:  #747474;
+	text-transform: capitalize;
+	font-size: 2.3rem;
+	padding: 10px 0;		
+}
+
+.cv>article {
+	color: #A6A7AA;
+	font-size: 1rem;
+}
+
+.cvLink {
+	position: relative;
+	margin: 0 3rem;
+}
+
+.cvLink a {
+	padding: 0 10px;
+	text-transform: uppercase;
+	color: #747474;
+}
+
+.cvLink a:hover {
+	color: #D89A7D;
+	text-decoration: none;
+}
+
+.cvLink:before,  .cvLink:after{
+	content: "";
+	display: blok;
+	width: 2rem;
+	height: 1px;
+	position: absolute;
+	top: calc(50% + 1px);
+	background-color: #747474;
+}
+
+.cvLink:before {
+	left: -2rem;
+}
+
+.myEducation { color: #747474; }
+
+.myEducation h2 {
+	padding: 40px 0;	
+}
+
+.diploms {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;	
+}
+
+.diploms div {
+	margin: 5px;
+}
+
+.bookM {
+	text-align: left;
+	height: 3rem;
+	font-size: 3rem;
+	color:  #A6A7AA;
+	transition: height 0.5s;	
+}
+
+.edu {
+	width: 20%;
+	min-width: 300px;
+	height: 300px;
+	background-color: #F6F0ED;
+	border-radius: 5px;
+	padding: 30px;
+	text-align: center;
+	display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	flex-direction: column;
+	justify-content: space-between;	
+}
+
+.edu:hover .bookM{	
+	color:#D89A7D;
+	height: 2rem;
+}
+
+.edu p {color: #A6A7AA;}
+
+.credo {
+	background-image: url(../img/credo-img.jpg);
+	background-repeat: no-repeat;
+	background-position:top;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 400px;
+	position: relative;
+}
+
+.credo:before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: 0;
+	background-color: rgba(255,220,196, 0.5);
+
+}
+
+.credo div {
+	text-align: center;	
+	padding: 3rem;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+}
+
+.credo q { font-size: 3rem }
+.credo span {
+	font-size: 1.5rem;
+	color: #32241D;
+	font-style: italic;
+	font-weight: bold; 
+	text-align: right;
+	margin-right: 2rem;
+}
+
+.contacts {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 200px;
+	flex-wrap: wrap;
+}
+
+.contacts div {
+	margin: 5px;
+	width: 31%;
+	min-width: 200px;
+}
+
+.part>.container,  .part>.container>.row{
+	height: 100%;
+}
+
+.last-part {
+	color: #747474;
+	height: auto;
+}
+
+.last-part>.container {
+	height: 100%;
+}
+
+.last-part span, .last-part span a{color: #A6A7AA;}
+
+.last-part span a:hover{
+	color: #D89A7D;
+	text-decoration: none;
+}
+
+.last-part h2 {
+	padding: 40px 0;	
+}
+
+footer { 
+	height: 100px;
+	background-color: #F9F9F9;
+	text-align: center;
+	padding-top: 30px;
+	color: #747474;
+}
