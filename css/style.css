@@ -8,7 +8,10 @@ body, div, ul, li, h1, h2, h3, p, span {
 	padding: 0;
 }
 
-a {	text-decoration: none; }
+a {	
+	text-decoration: none;
+	transition: color 0.5s; 
+}
 
 li {
 	text-decoration: none;
@@ -63,6 +66,34 @@ nav {
 	box-sizing: border-box;
 }
 
+.lang {
+	position: absolute;
+	z-index: 2;
+	left: 10rem;
+	display: flex;	
+	width: 5rem;
+	justify-content: space-between;
+}
+
+.lang a {
+	width: 2rem;
+	height: 2rem;
+	display: block;
+	color: #747474;
+	background-color:  #D89A7D;
+	border-radius: 50%;
+	text-align: center;
+	padding: 2px;
+	opacity: 0.7;
+	transition: opacity 0.5s;	
+}
+
+.lang a:hover {
+	text-decoration: none;
+	color:#747474;
+	opacity: 1;
+}
+
 .container {
 	max-width: 1200px !important;	
 	padding: 10px !important;
@@ -101,6 +132,7 @@ li a:hover {
  	color:  #D89A7D; 	
 }
 
+
 .navbar-toggler:focus {
  	outline: none;
 }
@@ -110,6 +142,18 @@ li a:hover {
 	height: auto;
 }
 
+.photo {
+	display: flex;
+	justify-content: flex-end;
+	align-items: bottom;
+}
+
+.myPhoto{
+	width: 332px;
+	height: 500px;
+}
+
+
 .me {
 	height: calc(100vh - 90px);
 }
@@ -118,7 +162,10 @@ li a:hover {
  	display: flex;
  	flex-direction: column;
  	align-items: left;
- 	justify-content: center;	
+ 	justify-content: center;
+ 	min-height: 500px;
+ 	height: auto;
+ 	z-index: 33;	
  }
 
  .name {
@@ -145,8 +192,6 @@ li a:hover {
  	font-size: 1.5rem; 	
  }
  .icons a {color: #747474;}
-
- span {transition: color 0.5s;}
 
  .icons  a:hover {
  	color: #D89A7D ;
@@ -247,7 +292,7 @@ li a:hover {
 	height: 3rem;
 	font-size: 3rem;
 	color:  #A6A7AA;
-	transition: height 0.5s;	
+	transition: height 0.5s, color 0.5s;	
 }
 
 .edu {
@@ -313,7 +358,7 @@ li a:hover {
 	justify-content: center;	
 }
 
-.credo q { font-size: 3rem }
+q { font-size: 3rem }
 .credo span {
 	font-size: 1.5rem;
 	color: #32241D;
@@ -371,4 +416,54 @@ footer {
 	text-align: center;
 	padding-top: 30px;
 	color: #747474;
+}
+
+
+
+#top {
+	border-radius: 50%;
+	background-color: rgb(226,166,125);
+	color: #747474;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+	box-sizing: border-box;
+	position: fixed;
+	bottom: 3rem;
+	right: 3rem;
+	width: 3rem;
+	height: 3rem;
+	opacity: .75;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#top:hover {
+    opacity: 1;
+    transition: .3s;
+}
+
+
+@media screen and (max-width: 575px) {
+	.myEducation {
+		margin-bottom: 40px;
+	}
+
+	q {font-size: 2rem;}
+
+	.me {
+		height: auto;				
+	}
+
+	.photo {
+		justify-content: center;		
+	}
+
+	.myPhoto {
+		border-radius: 20%
+	}
+
+	.myInfo {
+		align-items: center;
+	}
 }
