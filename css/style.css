@@ -143,16 +143,12 @@ li a:hover {
 }
 
 .photo {
-	display: flex;
-	justify-content: flex-end;
-	align-items: bottom;
+	height: calc(100vh - 90px);
+	background-image: url(../img/me.png);	
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: bottom;
 }
-
-.myPhoto{
-	width: 332px;
-	height: 500px;
-}
-
 
 .me {
 	height: calc(100vh - 90px);
@@ -355,7 +351,9 @@ li a:hover {
 	display: -o-flex;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;	
+	justify-content: center;
+	left: 0;
+    right: 0;	
 }
 
 q { font-size: 3rem }
