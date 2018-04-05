@@ -1,0 +1,127 @@
+body {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	font-family: 'Arial', sans-serif;
+}
+
+button {
+	margin: 20px;
+	background-color: #FFD1A6;
+	border: none; 
+	padding: 10px;
+	border-radius: 5px;
+	color: #2F271F;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+span {
+	margin: 0 40px;
+}
+
+span::after {
+	content: ';';
+}
+
+.header {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+
+#begin::before{
+	content: '['
+}
+
+ #begin::after{
+	content: ']'
+}
+
+.forSorting {
+	background-color: #FF7D59;
+}
+
+.container {
+	width: 500px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.regular {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+
+.unit {
+	border:1px solid  #2EB800;
+}
+
+.target {
+	background-color: #2EB800;
+	-ms-text-align-last: center;
+	text-align-last: center;
+}
+
+.yellow{
+	width: 500px;
+	-ms-text-align-last: center;
+	text-align-last: center;
+	background-color: yellow;
+}
+
+.inSortingProcess {
+	width: 500px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+
+.sortingUnits {
+	width: 500px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+
+.separ {
+	margin-left: 40px;
+}
+
+.green {
+	background-color:  #2EB800;
+}
