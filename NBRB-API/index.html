@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Currency</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body class="container">
+	<header>
+		<h1>Currency</h1>
+	</header>
+	<main >
+		<div>
+			<div class="d-flex align-items-center mb-5">
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<label for="currency" class="input-group-text">Choose currency</label>					
+					</div>
+					<select id="currency" class="custom-select">
+						<option value="292" selected>Евро</option>
+						<option value="145">Доллар США</option>
+						<option value="290">Украинская Гривна</option>
+						<option value="298">Российский Рубль</option>
+					</select>
+				</div>				
+				<p id="rateToday" class="ml-3"></p>
+ 
+				<!-- <label for="second">Compare Two Currencies</label>
+				<input type="checkbox" name="second" id="second"> -->
+			</div>
+			<div>
+				<p ><a class="btn btn-secondary" data-toggle="collapse" href="#schedule" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Make schedule</a></p>
+				<div class="row">
+					<div class="col">
+						<div class="collapse multi-collapse" id="schedule">
+							<div class="mb-5 calendars">
+								<p>Set dates: </p>
+								<label for="from">from: </label>
+								<input type="date" name="calendar" id="from" class="calendar">
+								<label for="to">to: </label>
+								<input type="date" name="calendar" id="to" class="calendar">
+								<p class="calendarError" id="calendarError">Please, set correct date</p>
+								<button id="get" class="btn btn-dark ml-5">Build</button>
+							</div>
+							<div>
+								<canvas id="canvas" width="900px" height="400px"></canvas>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>	
+	<script src="jquery.js"></script>
+	<script src="script.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

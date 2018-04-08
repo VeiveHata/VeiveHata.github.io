@@ -1,0 +1,38 @@
+canvas {
+	background-color:#f6f6f6;
+}
+
+.input-group {
+	width: 50%;
+}
+
+header {
+	margin-bottom: 30px;
+	margin-top: 20px;\
+}
+
+h1 {
+	color: grey;
+}
+
+.choose {
+	font-size: 20px;
+}
+
+.calendar {
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 3px solid grey;
+}
+
+.calendars {
+	position: relative;
+}
+
+.calendarError {
+	color: red;
+	font-size: 15px;
+	position: absolute;
+	display: none;
+}
