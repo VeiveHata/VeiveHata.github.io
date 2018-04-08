@@ -1,4 +1,4 @@
-const uri = 'http://www.nbrb.by/API/';
+const uri = 'https://www.nbrb.by/API/';
 const calendarTo = $('#to');
 const calendarFrom = $('#from');
 
